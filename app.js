@@ -80,6 +80,8 @@ function updatePosition () {
 
 window.addEventListener('keydown', movePlayer)
 window.addEventListener('load', () => {
-    audio.play()
-    gameLoop()
+    if (confirm('Bienvenido a mi juego, ¿Quieres iniciar?')) {
+       audio.play()
+       gameLoop()
+    }
 })
